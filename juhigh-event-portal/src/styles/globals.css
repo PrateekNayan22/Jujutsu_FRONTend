@@ -1,0 +1,45 @@
+﻿* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark, #0a0a0f);
+  color: var(--bone-white, #ffffff);
+  font-family: var(--font-body, 'Rajdhani', system-ui, sans-serif);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Master Container Class - Ensures generous gap from screen borders */
+.page-shell {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(2rem, 6vw, 6rem) !important;
+  padding-right: clamp(2rem, 6vw, 6rem) !important;
+}
+
+::selection {
+  background: var(--blood-red, #ef233c);
+  color: #fff;
+}

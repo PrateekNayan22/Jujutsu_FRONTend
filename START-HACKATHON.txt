@@ -1,0 +1,13 @@
+JUJUTSU HIGH — EVENT PARTICIPATION PORTAL
+
+1. Open this folder in VS Code.
+2. Run: npm install
+3. Run: npm run dev
+4. Open: http://localhost:5173/event-portal.html
+
+The original mission-network homepage remains at:
+http://localhost:5173/
+
+The original navbar now includes EVENT PORTAL ↗.
+
+The portal is a frontend prototype. Registration, passes, attendance and certificates persist in browser localStorage for the demo.

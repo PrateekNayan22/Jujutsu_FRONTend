@@ -1,0 +1,34 @@
+﻿:root {
+  /* JJK Color Palette */
+  --bg-dark: #0a0a0f;
+  --bg-charcoal: #141420;
+  --ink-black: #000000;
+  --blood-red: #ef233c;
+  --blood-dark: #8a0000;
+  --cursed-purple: #7209b7;
+  --cursed-blue: #4361ee;
+  --bone-white: #ffffff;
+  --muted-ash: #6c6c8a;
+
+  /* Font Families - Using Barlow Condensed for Headings for clean, aggressive anime titles */
+  --font-display: 'Dela Gothic One', 'Yuji Boku', cursive;
+  --font-heading: 'Barlow Condensed', 'Rajdhani', system-ui, sans-serif;
+  --font-body: 'Rajdhani', 'Inter', sans-serif;
+  --font-dossier: 'Special Elite', monospace;
+  --font-jp: 'Shippori Mincho', 'Yuji Syuku', serif;
+
+  /* Controlled Font Sizing */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-hero: clamp(3rem, 6vw, 6rem);
+
+  /* Shadows */
+  --ink-shadow: 2px 2px 0px var(--ink-black), 4px 4px 8px rgba(0,0,0,0.8);
+  --glow-blue: 0 0 15px rgba(67, 97, 238, 0.5);
+  --glow-red: 0 0 15px rgba(239, 35, 60, 0.5);
+}

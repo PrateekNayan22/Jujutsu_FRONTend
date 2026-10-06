@@ -1,0 +1,114 @@
+﻿/* --- BASE TYPOGRAPHY CLASSES --- */
+
+/* Used ONLY for giant display elements like Hero "DISCOVER" */
+.jjk-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+/* Section Headings — Sharp, condensed, aggressive anime-card style */
+.jjk-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.jjk-body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.jjk-dossier {
+  font-family: var(--font-dossier);
+  line-height: 1.45;
+}
+
+.jjk-label {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.jjk-jp {
+  font-family: var(--font-jp);
+  font-weight: 800;
+}
+
+/* --- THEMATIC EFFECTS --- */
+
+.jjk-stamp {
+  font-family: var(--font-dossier);
+  color: var(--blood-red);
+  border: 2px solid var(--blood-red);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transform: rotate(-3deg);
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(239,35,60,0.2), 0 0 5px rgba(239,35,60,0.2);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.ink-bleed {
+  text-shadow: 2px 2px 0 #000, 4px 4px 8px rgba(0,0,0,0.75);
+}
+
+.cursed-glow-blue {
+  text-shadow: 0 0 15px rgba(67, 97, 238, 0.65);
+}
+
+.cursed-glow-purple {
+  text-shadow: 0 0 15px rgba(114, 9, 183, 0.8);
+}
+
+.brush-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.brush-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--blood-red);
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  transform: rotate(-1deg);
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.brush-underline:hover::after {
+  width: 100%;
+}
+
+.kanji-bg {
+  position: absolute;
+  font-family: var(--font-jp);
+  font-size: clamp(6rem, 20vw, 14rem);
+  color: #000;
+  opacity: 0.15;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.domain-expansion-text {
+  font-family: var(--font-jp);
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-shadow: 3px 3px 0 #7209b7, -3px -3px 0 #4361ee;
+  letter-spacing: 0.18em;
+}
